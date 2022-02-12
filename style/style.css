@@ -1,0 +1,366 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Arial,sans-serif;
+}
+
+.container {
+  width: 1100px;
+  margin: auto;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.justify-content-space-around {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.justify-content-space-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  padding: 10px 40px;
+  background-color: #000f1e;
+  color: #fff;
+  font-size: 14px;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+button:hover {
+  background: #959595;
+  cursor: pointer;
+}
+
+.disable {
+  background: #959595;
+  cursor: not-allowed;
+}
+
+/********** Header ***************/
+header {
+  background: -webkit-gradient(linear, left bottom, left top, from(#00254c), color-stop(35%, #000));
+  background: linear-gradient(360deg, #00254c, #000 35%);
+  color: #fff;
+  padding: 50px 0 30px 0;
+  position: relative;
+}
+
+header .header-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .header-img img {
+  width: 100px;
+  margin-right: 40px;
+}
+
+header .header-text {
+  margin-bottom: 10px;
+}
+
+header .header-text h2 {
+  font-weight: 400;
+  font-size: 36px;
+}
+
+header .header-text p {
+  font-weight: 100;
+  font-size: 18px;
+  font-family: italic;
+}
+
+header nav ul {
+  position: absolute;
+  display: block;
+  bottom: 5%;
+  right: 10%;
+  -webkit-transition: -webkit-transform .4s ease;
+  transition: -webkit-transform .4s ease;
+  transition: transform .4s ease;
+  transition: transform .4s ease, -webkit-transform .4s ease;
+}
+
+header ul li a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 20px;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: color .2s ease;
+  transition: color .2s ease;
+}
+
+header ul li a:hover {
+  color: #959595;
+}
+
+/********** Header Responsive ***************/
+@media (max-width: 768px) {
+  header {
+    padding: 20px 0;
+  }
+  header .header-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  header .header-img img {
+    width: 70px;
+    margin-right: 40px;
+  }
+  header .header-text h2 {
+    font-size: 18px;
+  }
+  header .header-text p {
+    font-size: 10px;
+    margin-bottom: 15px;
+  }
+  header nav ul {
+    display: block;
+    bottom: 5%;
+    right: 25%;
+  }
+  header ul li a {
+    font-size: 12px;
+    margin-right: 20px;
+  }
+}
+
+/********** Hero ***************/
+.hero {
+  padding: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero article:first-child {
+  margin-right: 20px;
+}
+
+.hero article:last-child {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  line-height: 1.4;
+  font-size: 14px;
+}
+
+.hero h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.hero .text-img {
+  background-color: #3c3c3d;
+  color: #fff;
+  font-family: italic;
+  font-size: 11px;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.hero .text-img p {
+  padding: 10px;
+}
+
+.hero .hero-text2 {
+  margin: 20px 0 40px 0;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.hero h4 {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.hero h4:first-child {
+  margin: 0 0 10px 0;
+}
+
+.hero .hero-text2 p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/********** Hero Responsive ***************/
+@media (max-width: 768px) {
+  .hero {
+    padding: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .hero h2 {
+    text-align: center;
+    margin-bottom: 18px;
+    font-weight: 400;
+  }
+  .hero .row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .hero article:first-child {
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .hero article:first-child img {
+    width: 100%;
+  }
+  .hero .text-img {
+    background-color: #3c3c3d;
+    color: #fff;
+    font-family: 'Poppins', italic;
+    font-size: 12px;
+    text-align: center;
+    padding-bottom: 5px;
+  }
+  .hero .text-img p {
+    font-size: 8px;
+    padding: 5px;
+  }
+  .hero button {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/********** Footer ***************/
+footer {
+  padding: 50px 0;
+  background: -webkit-gradient(linear, left bottom, left top, from(#00254c), color-stop(55%, #000));
+  background: linear-gradient(360deg, #00254c, #000 55%);
+  font-family: 'Poppins',sans-serif;
+  color: #fff;
+}
+
+footer article {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+}
+
+footer article:nth-child(2) p {
+  font-size: 14px;
+}
+
+footer article:last-child {
+  font-size: 12px;
+  text-align: right;
+}
+
+footer article p:last-child {
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+footer nav ul li a {
+  color: #fff;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+footer span {
+  text-decoration: underline;
+}
+
+footer .footer-row:last-child {
+  padding-top: 30px;
+}
+
+footer .footer-text h2 {
+  margin-left: 15px;
+  font-size: 24px;
+}
+
+footer .footer-text p {
+  font-size: 10px;
+  text-align: right;
+}
+
+/********** Footer Responsive ***************/
+@media (max-width: 768px) {
+  footer {
+    padding: 20px 0;
+    margin: auto;
+    text-align: center;
+  }
+  footer .container {
+    width: 100%;
+    margin: auto;
+  }
+  footer .footer-row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    margin: auto;
+  }
+  footer article {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    margin-bottom: 20px;
+    font-size: 10px;
+    text-align: center;
+  }
+  footer article:last-child {
+    font-size: 10px;
+    margin: auto;
+  }
+  footer article p:last-child {
+    margin-top: 20px;
+  }
+  footer .footer-row:last-child {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  footer .footer-text {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  footer .footer-text:first-child {
+    margin: 20px 200px;
+  }
+  footer .footer-text img {
+    width: 50px;
+  }
+  footer .footer-text h2 {
+    font-size: 20px;
+    margin-left: 5px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
